@@ -166,8 +166,8 @@ class DuplicateFileFinder:
         xscroll.pack(fill="x", side="bottom")
         yscroll.place(relx=1.0, rely=0.15, relheight=0.78, anchor="ne")
 
-        footer = tk.Frame(self.root, bg=self.bg, padx=24, pady=(0, 16))
-        footer.pack(fill="x")
+        footer = tk.Frame(self.root, bg=self.bg, padx=24, pady=0)
+        footer.pack(fill="x", pady=(0, 16))
         self.progress = ttk.Progressbar(footer, mode="indeterminate",
                                         style="Horizontal.TProgressbar")
         self.progress.pack(fill="x", pady=(0, 8))
